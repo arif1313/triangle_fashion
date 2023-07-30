@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle fashion</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- font -->
+    <style>
+        .font_poppiens {
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header,
+        main,
+        footer {
+            margin: 2rem 0rem;
+        }
+       
+        .navbar {
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            background-color: #ACC8E5;
+            
+
+        }
+        .menu-horizontal{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000000;
+            padding: 0rem 0.25rem;
+
+        }
+       .menu_top{
+        display: flex;
+        justify-content: space-around;
+
+        }
+        .logo{
+            width: 2rem;
+            height: 2rem;
+        }
+        .hearotitle h1{
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+        }
+        /* mb-5 text-xl font-medium */
+        .hearotitle p{
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+
+        }
+       
+        .shopnowbtn{
+            background-color:dodgerblue;
+           color:white;
+            font-size: 1.25rem;
+            font-weight: 800;
+            border: none;
+        }
+        hover::shopnowbtn{
+            background-color:#ACC8E5;
+            color:bisque;
+        }
+        .carosolSection{
+            margin-bottom: 6.125rem;
+        }
+        .card_div{
+            width: auto;
+            height: auto;
+            background-color: #d4dee9;
+            border-radius:0.5rem;
+            padding: 3rem;
+           
+        }
+        .card_img{
+            width: 7rem;
+            height: 7rem;
+        }
+        .img_div{
+            display: flex;
+            justify-content: center;
+        }
+        .dispalytite{
+font-size: 3rem;
+font-weight: 800;
+text-align: center;
+margin-bottom: 2rem;
+        }
+    </style>
+
+</head>
+
+
+<body class="container mx-auto">
+    <header class="container mx-auto">
+        <!-- nev 0 -->
+        <div class="navbar">
+            
+                <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
+                    <img class="logo " src="images/R.png" alt="">
+                    <a class="btn btn-ghost normal-case ">
+                        <h1 class="text-4xl text-black font-extrabold">Triangle F.S</h1>
+                    </a>
+                </div>
+               
+           
+
+            <div class="menu_top">
+                <div class="navbar-centerhidden hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                      <li tabindex="0">
+                        <details>
+                          <summary>Products</summary>
+                          <ul class="p-2 bg-black">
+                            <li><a>Watch</a></li>
+                            <li><a>Sunglass</a></li>
+                            <li><a>Wallet</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                </div>
+               
+
+            </div>
+            
+            <div>
+                <div class="hidden lg:flex">
+                 <button class="btn btn-sm text-[#2D3171]">Acount</button>
+                </div>
+
+                <!-- dropdown -->
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 -ml-20 text-black text-xl font-medium">
+                        
+                        <li>
+                            <div class="">
+                                <button class="btn btn-sm">Acount</button>
+                               </div>
+    
+                            </li>
+                            <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Products</summary>
+                                <ul class="p-2 bg-black">
+                                  <li><a>Watch</a></li>
+                                  <li><a>Sunglass</a></li>
+                                  <li><a>Wallet</a></li>
+                                </ul>
+                            </details>
+                          </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class= "carosolSection relative">
+
+            <div class="carousel  w-full rounded-lg">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero " style="background-image: url(./images/watchslider.webp);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md hearotitle">
+                                <h1 class=""> Count your golden  <br> time</h1>
+                                <p class="">We supply highly quality organic products</p>
+                                <button class="btn  shopnowbtn">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full bg-yellow-300">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <div class="hero min-h-screen" style="background-image: url(./images/waledslide.jpg);">
+                            <div class="hero-overlay bg-opacity-60"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                                <div class="max-w-md hearotitle">
+                                    <h1 class="">Safety your money <br>  that you earn  </h1>
+                                    <p class="">Long lasting lether money bag</p>
+                                    <button class="btn  shopnowbtn">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <div class="hero min-h-screen" style="background-image: url(./images/sungalsslide2.jpg);">
+                            <div class="hero-overlay bg-opacity-60"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                                <div class="max-w-md hearotitle">
+                                    <h1 class="">Decorate yourself <br> beautifully
+                                    </h1>
+                                    <p class=""> Can take Sungalass with various design
+                                    </p>
+                                    <button class="btn  shopnowbtn">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+          
+           
+        </section>
+      
+         <!-- card section -->
+         <section class="watch_section">
+            <h1 class="dispalytite"> Watch Display </h1>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
+                <!-- card one  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//watch2.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//watch3.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           1500 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1432</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card three  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//watch4.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           2500 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1497</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card four  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//watch5.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           1800 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1625</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-12">
+                <div>
+                    <button class="btn  shopnowbtn">See All</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- wallet sction  -->
+        <section class="wallet_section">
+            <h1 class="dispalytite"> Watch Display </h1>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
+                <!-- card one  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//wallert1.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           690 tk
+                        </h2>
+
+                        <p class="text-center">Apples</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//wallet2.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           450tk
+                        </h2>
+
+                        <p class="text-center">Apples</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card three  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//wallet3.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           850 tk
+                        </h2>
+
+                        <p class="text-center">Apples</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card four  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//wallet4.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           999 tk
+                        </h2>
+
+                        <p class="text-center">Apples</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-12">
+                <div>
+                    <button class="btn  shopnowbtn">See All</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- sunglass sction -->
+        <section class="sunglass_section">
+            <h1 class="dispalytite"> Sunglass display </h1>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
+                <!-- card one  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//glass1.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           600 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-2654</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//glass2.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           890 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1483</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card three  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//glass3.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           399 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-3258</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card four  -->
+
+                <div class=" card_div card  ">
+                    <div class="img_div">
+                        <img class=" card_img" src="./images//glass4.png" alt="watch" />
+                    </div>
+                 
+                    <div class="card-body gap-3 ">
+                        <h2 class="text-lg font-bold text-center">
+                           590 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-3842</p>
+                        <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center ">
+                            <h4 class=" ">
+                                <!-- model -->
+                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
+                                    Details</a>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-12">
+                <div>
+                    <button class="btn  shopnowbtn">See All</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<style>
+.font_poppiens {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main,
+footer {
+    margin: 2rem 0rem;
+}
+
+.navbar {
+    border: 2px solid orange;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: gray;
+
+}
+.menu_item{
+    /*display: flex;
+    justify-content: space-between;*/
+}
+
+
+/* media quriy */
+
+@media screen and (max-width: 576px) {
+    navbar-center{
+
+    visibility: hidden;
+
+    }
+    
+    }
+    @media screen and ((min-width: 576px) and (max-width: 976px)) {
+   
+        navbar-center{
+
+           display: flex;
+
+    }
+</style>
+
