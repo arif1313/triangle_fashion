@@ -28,7 +28,7 @@
         footer {
             margin: 2rem 0rem;
         }
-       
+
         .navbar {
             border-radius: 0.5rem;
             display: flex;
@@ -36,92 +36,105 @@
             align-items: center;
             margin-bottom: 8px;
             background-color: #ACC8E5;
-            
+
 
         }
-        .menu-horizontal{
+
+        .menu-horizontal {
             font-size: 1rem;
             font-weight: 400;
             color: #000000;
             padding: 0rem 0.25rem;
 
         }
-       .menu_top{
-        display: flex;
-        justify-content: space-around;
+
+        .menu_top {
+            display: flex;
+            justify-content: space-around;
 
         }
-        .logo{
+
+        .logo {
             width: 2rem;
             height: 2rem;
         }
-        .hearotitle h1{
+
+        .hearotitle h1 {
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1.25rem;
         }
+
         /* mb-5 text-xl font-medium */
-        .hearotitle p{
+        .hearotitle p {
             margin-bottom: 1.25rem;
             font-size: 1.25rem;
             font-weight: 800;
 
         }
-       
-        .shopnowbtn{
-            background-color:dodgerblue;
-           color:white;
+
+        .shopnowbtn {
+            background-color: dodgerblue;
+            color: white;
             font-size: 1.25rem;
             font-weight: 800;
             border: none;
         }
-        hover::shopnowbtn{
-            background-color:#ACC8E5;
-            color:bisque;
+
+        hover::shopnowbtn {
+            background-color: #ACC8E5;
+            color: bisque;
         }
-        .carosolSection{
+
+        .carosolSection {
             margin-bottom: 6.125rem;
         }
-        .card_div{
+
+        .card_div {
             width: auto;
             height: auto;
             background-color: #d4dee9;
-            border-radius:0.5rem;
+            border-radius: 0.5rem;
             padding: 3rem;
-           
+
         }
-        .card_img{
+
+        .card_img {
             width: 7rem;
             height: 7rem;
         }
-        .img_div{
+
+        .img_div {
             display: flex;
             justify-content: center;
         }
-        .dispalytite{
-font-size: 3rem;
-font-weight: 800;
-text-align: center;
-margin-bottom: 2rem;
+
+        .dispalytite {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 2rem;
         }
     </style>
 
 </head>
 
 
+<!-- You can open the modal using ID.showModal() method -->
+
 <body class="container mx-auto">
     <header class="container mx-auto">
         <!-- nev 0 -->
         <div class="navbar">
-            
-                <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
-                    <img class="logo " src="images/R.png" alt="">
-                    <a class="btn btn-ghost normal-case ">
-                        <h1 class="text-4xl text-black font-extrabold">Triangle F.S</h1>
-                    </a>
-                </div>
-               
-           
+
+            <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
+                <img class="logo " src="images/R.png" alt="">
+                <a class="btn btn-ghost normal-case ">
+                    <h1 class="text-4xl text-black font-extrabold">Triangle F.S</h1>
+                </a>
+            </div>
+
+
 
             <div class="menu_top">
                 <div class="navbar-centerhidden hidden lg:flex">
@@ -129,29 +142,76 @@ margin-bottom: 2rem;
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
-                      <li tabindex="0">
-                        <details>
-                          <summary>Products</summary>
-                          <ul class="p-2 bg-black">
-                            <li><a>Watch</a></li>
-                            <li><a>Sunglass</a></li>
-                            <li><a>Wallet</a></li>
-                          </ul>
-                        </details>
-                      </li>
+                        <li class="" tabindex="0">
+                            <details>
+                                <summary>Products</summary>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><a>Watch</a></li>
+                                    <li><a>Sunglass</a></li>
+                                    <li><a>Wallet</a></li>
+                                </ul>
+                            </details>
+                        </li>
                     </ul>
                 </div>
-               
+
 
             </div>
-            
+
             <div>
                 <div class="hidden lg:flex">
-                 <button class="btn btn-sm text-[#2D3171]">Acount</button>
+                    <button class="btn btn-sm text-[#2D3171]">Acount</button>
+                </div>
+                <!-- dower -->
+                <div class="drawer drawer-end">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer-4" class="drawer-button lg:hidden"> <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+
+
+                        </label>
+                    </div>
+                    <div class="drawer-side z-[1]">
+                        <label for="my-drawer-4" class="drawer-overlay"></label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -ml-20 text-black text-xl font-medium">
+
+                            <li>
+                                <div class="">
+                                    <button class="btn btn-sm">Acount</button>
+                                </div>
+
+                            </li>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li class="" tabindex="0">
+                                <details>
+                                    <summary>Products</summary>
+                                    <ul tabindex="0"
+                                        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li><a>Watch</a></li>
+                                        <li><a>Sunglass</a></li>
+                                        <li><a>Wallet</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- dower end -->
+
                 <!-- dropdown -->
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -171,26 +231,26 @@ margin-bottom: 2rem;
                             <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
-                        <li tabindex="0">
+                        <li class="" tabindex="0">
                             <details>
-                                <summary>Products</summary>
-                                <ul class="p-2 bg-black">
-                                  <li><a>Watch</a></li>
-                                  <li><a>Sunglass</a></li>
-                                  <li><a>Wallet</a></li>
-                                </ul>
+                              <summary>Products</summary>
+                              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Watch</a></li>
+                                <li><a>Sunglass</a></li>
+                                <li><a>Wallet</a></li>
+                              </ul>
                             </details>
                           </li>
                        
                     </ul>
                 </div>
+            </div> -->
             </div>
-        </div>
 
     </header>
 
     <main>
-        <section class= "carosolSection relative">
+        <section class="carosolSection ">
 
             <div class="carousel  w-full rounded-lg">
                 <!-- slide 1 -->
@@ -199,7 +259,7 @@ margin-bottom: 2rem;
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md hearotitle">
-                                <h1 class=""> Count your golden  <br> time</h1>
+                                <h1 class=""> Count your golden <br> time</h1>
                                 <p class="">We supply highly quality organic products</p>
                                 <button class="btn  shopnowbtn">Shop
                                     Now</button>
@@ -219,7 +279,7 @@ margin-bottom: 2rem;
                             <div class="hero-overlay bg-opacity-60"></div>
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="max-w-md hearotitle">
-                                    <h1 class="">Safety your money <br>  that you earn  </h1>
+                                    <h1 class="">Safety your money <br> that you earn </h1>
                                     <p class="">Long lasting lether money bag</p>
                                     <button class="btn  shopnowbtn">Shop
                                         Now</button>
@@ -255,15 +315,49 @@ margin-bottom: 2rem;
                     </div>
 
                 </div>
-                
-                
             </div>
-          
-           
+
         </section>
-      
-         <!-- card section -->
-         <section class="watch_section">
+        <!-- offer section  -->
+        <section class="my-32">
+            <div class="carousel w-full ">
+              
+                <div id="item3" class="carousel-item w-full justify-around bg-[#d4dee9] items-center rounded-lg">
+                   <div>
+                    <img  src="/images//thirty-.png" class="w-full h-48" />
+                   </div>
+                   <div class="space-y-7">
+                    <h1 class="text-5xl font-extrabold"> Triangle Offer </h1>
+                    <p class="text-lg font-medium"> Buy 3 products From 3 display <br> get 30% discount</p>
+                   </div>
+                   <div>
+                    <img src="/images/discount1.png" alt="" class="w-ful h-48">
+                   </div>
+                </div>
+                <div id="item4" class="carousel-item w-full justify-around bg-[#d4dee9] items-center rounded-lg">
+                    <div>
+                        <img  src="/images//tenparsent.png" class="w-full h-48" />
+                       </div>
+                       <div class="space-y-7">
+                        <h1 class="text-5xl font-extrabold"> Triangle Offer </h1>
+                        <p class="text-lg font-medium"> Buy more than one  products From one display section <br> get 10% discount  </p>
+                       </div>
+                       <div>
+                        <img src="/images/discount2.png" alt="" class="w-ful h-48">
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center w-full py-2 gap-2">
+               
+                <a href="#item3" class="btn btn-xs">1</a>
+                <a href="#item4" class="btn btn-xs">2</a>
+            </div>
+
+        </section>
+
+        <!-- card section -->
+        <section class="watch_section">
             <h1 class="dispalytite"> Watch Display </h1>
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <!-- card one  -->
@@ -272,10 +366,10 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//watch2.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           1200 tk
+                            1200 tk
                         </h2>
 
                         <p class=" ">Model : WS-1539</p>
@@ -287,11 +381,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_2.showModal()">Details</a>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="/images/watch2.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Royel Black</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WS-1539 </li>
+                                                    <li>Brand : Forcast</li>
+                                                    <li>Colour : Black </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Quality : Water prove</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -302,10 +430,10 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//watch3.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           1500 tk
+                            1500 tk
                         </h2>
 
                         <p class=" ">Model : WS-1432</p>
@@ -317,11 +445,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_4.showModal()">Details</a>
+                            <dialog id="my_modal_4" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="/images/watch3.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Univarsal </h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WS-1539 </li>
+                                                    <li>Brand : Rolex</li>
+                                                    <li>Colour : Silvar </li>
+                                                    <li>Belt : lether </li>
+                                                    <li>Quality : Water prove</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -332,10 +494,10 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//watch4.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           2500 tk
+                            2500 tk
                         </h2>
 
                         <p class=" ">Model : WS-1497</p>
@@ -347,11 +509,44 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_5.showModal()">Details</a>
+                            <dialog id="my_modal_5" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="/images/watch4.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Silvar dimond</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WS-1539 </li>
+                                                    <li>Brand : Omega </li>
+                                                    <li>Colour : Silvar </li>
+                                                    <li>Belt : silvar Chain </li>
+                                                    <li>Quality : Water prove</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -362,10 +557,10 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//watch5.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           1800 tk
+                            1800 tk
                         </h2>
 
                         <p class=" ">Model : WS-1625</p>
@@ -377,11 +572,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_6.showModal()">Details</a>
+                            <dialog id="my_modal_6" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="/images/watch5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Fast count </h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WS-1539 </li>
+                                                    <li>Brand : Forcast</li>
+                                                    <li>Colour : gray white </li>
+                                                    <li>Belt : lether</li>
+                                                    <li>Quality : Water prove</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -399,7 +628,7 @@ margin-bottom: 2rem;
 
         <!-- wallet sction  -->
         <section class="wallet_section">
-            <h1 class="dispalytite"> Watch Display </h1>
+            <h1 class="dispalytite"> wallet Display </h1>
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <!-- card one  -->
 
@@ -407,13 +636,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//wallert1.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           690 tk
+                            690 tk
                         </h2>
 
-                        <p class="text-center">Apples</p>
+                        <p class="text-center">Model : WL-2589</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -422,11 +651,46 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_7.showModal()">Details</a>
+                            <dialog id="my_modal_7" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//wallert1.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Cool look </h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WL-2589 </li>
+                                                    <li>Brand : Louis Vuitton </li>
+                                                    <li>Colour :black </li>
+
+                                                    <li>Quality : lether </li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -437,13 +701,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//wallet2.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           450tk
+                            450tk
                         </h2>
 
-                        <p class="text-center">Apples</p>
+                        <p class="text-center">Model : WL-3259</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -452,11 +716,46 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_8.showModal()">Details</a>
+                            <dialog id="my_modal_8" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//wallet2.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Blue Style</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WL-3259 </li>
+                                                    <li>Brand : Hermes</li>
+                                                    <li>Colour : Blue </li>
+
+                                                    <li>Quality : mix</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -467,13 +766,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//wallet3.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           850 tk
+                            850 tk
                         </h2>
 
-                        <p class="text-center">Apples</p>
+                        <p class="text-center">Model : WL-6591</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -482,11 +781,46 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_9.showModal()">Details</a>
+                            <dialog id="my_modal_9" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//wallet3.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Wood panda</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WL-6591 </li>
+                                                    <li>Brand : Montblanc</li>
+                                                    <li>Colour : Black </li>
+
+                                                    <li>Quality : lether </li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -497,13 +831,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//wallet4.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           999 tk
+                            999 tk
                         </h2>
 
-                        <p class="text-center">Apples</p>
+                        <p class="text-center">Model : WL-1258</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -512,11 +846,46 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_10.showModal()">Details</a>
+                            <dialog id="my_modal_10" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//wallet4.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Black Dimond</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : WL-1258 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour : Black </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Quality : Water prove</li>
+                                                    <li>Warenty : 1 Year </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -542,13 +911,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//glass1.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           600 tk
+                            600 tk
                         </h2>
 
-                        <p class=" ">Model : WS-2654</p>
+                        <p class=" ">Model : SS-2654</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -557,11 +926,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_11.showModal()">Details</a>
+                            <dialog id="my_modal_11" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//glass1.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">King look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-2654 </li>
+                                                    <li>Brand : MELLER </li>
+                                                    <li>Colour : Black </li>
+                                                    <li>Frame : Polimar </li>
+
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -572,13 +975,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//glass2.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           890 tk
+                            890 tk
                         </h2>
 
-                        <p class=" ">Model : WS-1483</p>
+                        <p class=" ">Model : SS-1483</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -587,11 +990,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_12.showModal()">Details</a>
+                            <dialog id="my_modal_12" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//glass2.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Sunprotect</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-1483 </li>
+                                                    <li>Brand : Selfmade</li>
+                                                    <li>Colour : Black </li>
+                                                    <li>Frame : pure Plastic </li>
+
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -602,13 +1039,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//glass3.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           399 tk
+                            399 tk
                         </h2>
 
-                        <p class=" ">Model : WS-3258</p>
+                        <p class=" ">Model : SS-3258</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -617,11 +1054,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_13.showModal()">Details</a>
+                            <dialog id="my_modal_13" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//glass3.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold">Royel Black</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-3258 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour : Black </li>
+
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -632,13 +1103,13 @@ margin-bottom: 2rem;
                     <div class="img_div">
                         <img class=" card_img" src="./images//glass4.png" alt="watch" />
                     </div>
-                 
+
                     <div class="card-body gap-3 ">
                         <h2 class="text-lg font-bold text-center">
-                           590 tk
+                            590 tk
                         </h2>
 
-                        <p class=" ">Model : WS-3842</p>
+                        <p class=" ">Model : SS-3842</p>
                         <div class="rating justify-center ">
                             <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -647,11 +1118,45 @@ margin-bottom: 2rem;
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center ">
-                            <h4 class=" ">
-                                <!-- model -->
-                                <a href="#my_modal_1" class="text-sm font-semibold text-info text-maincolor">
-                                    Details</a>
-                            </h4>
+
+                            <!-- model -->
+                            <a class="text-lg font-semibold text-info text-maincolor"
+                                onclick="my_modal_14.showModal()">Details</a>
+                            <dialog id="my_modal_14" class="modal">
+                                <form method="dialog" class=" w-1/2">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images//glass4.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div>
+                                                    <button class="btn  shopnowbtn">Buy
+                                                        Now</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+
 
                         </div>
                     </div>
@@ -666,9 +1171,216 @@ margin-bottom: 2rem;
             </div>
 
         </section>
-    </main>
-    <footer>
 
+        <!-- our service  -->
+        <section class="my-12 py-12  px-0  bg-[#d4dee9]">
+            <h1 class="text-5xl font-extrabold text-center">
+                Our service
+            </h1>
+            <p class="text-center py-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem?<br class="lg:hidden"> It has
+                roots in a piece of classical <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="hero-content  flex-col lg:flex-row gap-10 px-0 mx-0">
+
+
+                <div class="flex flex-col-reverse lg:flex-row gap-10">
+                    <div class="text-center lg:text-left">
+
+                        <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+                            <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                                <img class="w-8 h-8 " src="./images//icon4.png" alt="">
+                            </div>
+                            <div>
+
+                                <h1 class="text-2xl font-extrabold py-3">Dedicated Team</h1>
+                                <div class="w-28 h-0.5 ml-24 lg:ml-0 bg-black"></div>
+
+                                <p class=" text-base font-medium">Professional employees are there for you to <br>
+                                    pick
+                                    the most
+                                    amazing and fresh
+                                    fruits.</p>
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+                            <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                                <img class="w-8 h-8 " src="./images//icons8-best-seller-40.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-extrabold py-3">Best Product</h1>
+                                <div class="w-28 h-0.5 ml-24 lg:ml-0 bg-black"></div>
+                                <p class="text-base font-medium">Professional employees are there for you to
+                                    <br>pick
+                                    the most
+                                    amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+                            <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                                <img class="w-8 h-8 " src="./images//icons8-certificate-50.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-extrabold py-3">Certified</h1>
+                                <div class="w-28 h-0.5 ml-24 lg:ml-0 bg-black"></div>
+                                <p class="text-base font-medium">Professional employees are there for you to <br>
+                                    pick
+                                    the most
+                                    amazing and fresh
+                                    fruits.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <div class="bg-cardcolor col-span-2 flex justify-center items-center rounded-full">
+                            <img class="w-36 h-36 " src="./images//watch2.png" alt="">
+                        </div>
+                        <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                            <img class="w-64 h-48  " src="./images//glass3.png" alt="">
+                        </div>
+                        <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                            <img class="w-64 h-48 " src="./images//wallet4.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" text-center lg:text-right">
+
+                    <div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-5">
+                        <div>
+
+                            <h1 class="text-2xl font-extrabold py-3">Home delivary</h1>
+                            <div class="w-28 h-0.5 bg-black ml-24 lg:ml-48 "></div>
+                            <p class="text-base font-medium">Professional employees are there for you to <br> pick
+                                the most
+                                amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                            <img class="w-8 h-8 " src="./images//icons8-home-delivery-64.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-5">
+                        <div>
+                            <h1 class="text-2xl font-extrabold py-3">Installment</h1>
+                            <div class="w-28 h-0.5 bg-black ml-24 lg:ml-48 "></div>
+                            <p class=" text-base font-medium">Professional employees are there for you to <br> pick
+                                the most
+                                amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                            <img class="w-8 h-8 " src="./images//icons8-installment-payment-96.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-5">
+                        <div>
+                            <h1 class="text-2xl font-extrabold py-3">Best sarvice</h1>
+                            <div class="w-28 h-0.5 bg-black ml-24 lg:ml-48 "></div>
+
+                            <p class="text-base font-medium">Professional employees are there for you to <br> pick
+                                the most
+                                amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
+                            <img class="w-8 h-8 " src="./images//icons8-service-100.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- faq section -->
+        <section class="my-32 py-12  px-10  bg-[#d4dee9]">
+
+            <div class="flex flex-col lg:flex-row justify-between gap-10">
+                <div class="flex-1 space-y-7 p-10 rounded-lg shadow-lg  bg-base-100">
+                    <h1 class="text-5xl font-extrabold">Triangle Fashion Shop</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur tempora quas
+                        praesentium aut unde accusamus placeat iste iure expedita tempore, odio laborum quam natus
+                        dolorem nulla rerum hic soluta!</p>
+                </div>
+                <div class="flex-1 space-y-7">
+                    <div class="collapse collapse-plus h-24 items-center bg-base-100">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Click to open this one and close others
+                        </div>
+                        <div class="collapse-content ">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus h-24 items-center bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Click to open this one and close others
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus h-24 items-center bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Click to open this one and close others
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- foote section  -->
+    <footer class="footer footer-center py-24 bg-black text-neutral-content rounded ">
+        <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
+            <img class="w-12 h-12" src="images/R.png" alt="">
+            <a class="btn btn-ghost normal-case ">
+                <h1 class="text-4xl text-white font-extrabold">Triangle F.S</h1>
+            </a>
+        </div>
+        <div class="grid  grid-cols-3 lg:grid-flow-col gap-10 text-white">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover"> Support</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-10">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+            <div class="mt-16">
+                <p>Copyright © by Triangle fashion company </p>
+            </div>
+        </div>
+        <br><br> <br>
     </footer>
 
 </body>
