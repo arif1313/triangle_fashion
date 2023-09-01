@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>triangle fashion</title>
+    <title>Triangle Fashion</title>
     <!-- tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,107 +16,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+
     <!-- font -->
-    <style>
-        .font_poppiens {
-            font-family: 'Poppins', sans-serif;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        header,
-        main,
-        footer {
-            margin: 2rem 0rem;
-        }
-
-        .navbar {
-            border-radius: 0.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
-            background-color: #ACC8E5;
-
-
-        }
-
-        .menu-horizontal {
-            font-size: 1rem;
-            font-weight: 400;
-            color: #000000;
-            padding: 0rem 0.25rem;
-
-        }
-
-        .menu_top {
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        .logo {
-            width: 2rem;
-            height: 2rem;
-        }
-
-        .hearotitle h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.25rem;
-        }
-
-        /* mb-5 text-xl font-medium */
-        .hearotitle p {
-            margin-bottom: 1.25rem;
-            font-size: 1.25rem;
-            font-weight: 800;
-
-        }
-
-        .shopnowbtn {
-            background-color: dodgerblue;
-            color: white;
-            font-size: 1.25rem;
-            font-weight: 800;
-            border: none;
-        }
-
-        hover::shopnowbtn {
-            background-color: #ACC8E5;
-            color: bisque;
-        }
-
-        .carosolSection {
-            margin-bottom: 6.125rem;
-        }
-
-        .card_div {
-            width: auto;
-            height: auto;
-            background-color: #d4dee9;
-            border-radius: 0.5rem;
-            padding: 3rem;
-
-        }
-
-        .card_img {
-            width: 7rem;
-            height: 7rem;
-        }
-
-        .img_div {
-            display: flex;
-            justify-content: center;
-        }
-
-        .dispalytite {
-            font-size: 3rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-    </style>
-
+   
 </head>
 
 
@@ -125,12 +29,12 @@
 <body class="container mx-auto">
     <header class="container mx-auto">
         <!-- nev 0 -->
-        <div class="navbar">
+        <div class="navbar bg-blue-300">
 
             <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
                 <img class="logo " src="images/R.png" alt="">
                 <a class="btn btn-ghost normal-case ">
-                    <h1 class="text-4xl text-black font-extrabold">Triangle F.S</h1>
+                    <h1 class="text-4xl text-black font-extrabold">Triangle Fashion House</h1>
                 </a>
             </div>
 
@@ -139,20 +43,23 @@
             <div class="menu_top">
                 <div class="navbar-centerhidden hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                         <li class="" tabindex="0">
                             <details>
-                                <summary>Products</summary>
+                                <summary class="font-bold text-lg">Products</summary>
                                 <ul tabindex="0"
                                     class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                    <li><a>Watch</a></li>
-                                    <li><a>Sunglass</a></li>
-                                    <li><a>Wallet</a></li>
+                                    <li><a href="all_watch.html">Watches</a></li>
+                                            <li><a href="all_sunglass.html">Sunglasses</a></li>
+                                            <li><a href="all_wallet.html">Wallets</a></li>
                                 </ul>
                             </details>
                         </li>
+                        <div class="hidden lg:flex">
+                            <button class="btn btn-active glass  font-bold"> <a href="login.html">login</a></button>
+                        </div>
                     </ul>
                 </div>
 
@@ -160,96 +67,140 @@
             </div>
 
             <div>
-                <div class="hidden lg:flex">
-                    <button class="btn btn-active btn-link"> <a href="./index1.html">login</a></button>
-                </div>
-                <div class="hidden lg:flex">
-                    <button class="btn btn-sm text-[#2D3171]">Acount</button>
-                </div>
-                <!-- dower -->
-                <div class="drawer drawer-end">
-                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+
+
+                <!-- acout dowyer -->
+
+                <div class="drawer drawer-end ">
+                    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
                     <div class="drawer-content">
                         <!-- Page content here -->
-                        <label for="my-drawer-4" class="drawer-button lg:hidden"> <svg
-                                xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-
-
-                        </label>
+                        <label for="my-drawer-3" class="drawer-button btn btn-primary hidden lg:flex">Account</label>
                     </div>
-                    <div class="drawer-side z-[1]">
-                        <label for="my-drawer-4" class="drawer-overlay"></label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -ml-20 text-black text-xl font-medium">
-                            <li><button class="btn btn-active btn-link">login</button></li>
+                    <div class="drawer-side z-[2]  ">
+                        <label for="my-drawer-3" class="drawer-overlay"></label>
+                        <ul class="menu p-4 w-80 h-full bg-white font-bold">
+                            <!-- Sidebar content here -->
+
+                            <div class="avatar flex justify-center ">
+                                <div class="rounded-full bg-blue-600">
+                                    <div class="w-24 mask mask-hexagon  ">
+                                        <img src="/images//user-1.png" class="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold text-center pb-7"> Md Ata Miya</h1>
                             <li>
-                                <div class="">
-                                    <button class="btn btn-sm">Acount</button>
+                                <div class="flex justify-between mt-20px ">
+                                    <div>
+                                        Name : Md. Ata Miya
+                                    </div>
+                                    <div>
+                                        Edit
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between mt-20px">
+                                    <div>
+                                        Contact : 01757072833
+                                    </div>
+                                    <div>
+                                        Edit
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between mt-20px">
+                                    <div>
+                                        Address : Hazaribag , Dhaka
+                                    </div>
+                                    <div>
+                                        Edit
+                                    </div>
                                 </div>
 
+                          
+                            <li>
+                                <div class="flex justify-between mt-20px">
+                                    <div>
+                                        Mail : ataali@gamail.com
+                                    </div>
+                                    <div>
+                                        Edit
+                                    </div>
+                                </div>
                             </li>
-                            
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li class="" tabindex="0">
-                                <details>
-                                    <summary>Products</summary>
-                                    <ul tabindex="0"
-                                        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                        <li><a>Watch</a></li>
-                                        <li><a>Sunglass</a></li>
-                                        <li><a>Wallet</a></li>
-                                    </ul>
-                                </details>
+                            <li>
+                                <div class="flex justify-between mt-20px">
+                                    <div>
+                                        Total order : 5
+                                    </div>
+                                </div>
+                                <div class="flex justify-between mt-20px">
+                                    <div>
+                                        Current order : Wl-7565
+                                    </div>
+                                </div>
                             </li>
-
                         </ul>
                     </div>
-                </div>
 
-                <!-- dower end -->
+                    <!-- acout dowyer -->
 
-                <!-- dropdown -->
-                <!-- <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 -ml-20 text-black text-xl font-medium">
-                        
-                        <li>
-                            <div class="">
-                                <button class="btn btn-sm">Acount</button>
-                               </div>
-    
-                            </li>
-                            <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li class="" tabindex="0">
-                            <details>
-                              <summary>Products</summary>
-                              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Watch</a></li>
-                                <li><a>Sunglass</a></li>
-                                <li><a>Wallet</a></li>
-                              </ul>
-                            </details>
-                          </li>
-                       
-                    </ul>
+
+                    <!-- dower -->
+                    <div class="drawer drawer-end">
+                        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+                            <label for="my-drawer-4" class="drawer-button lg:hidden"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+
+
+                            </label>
+                        </div>
+                        <div class="drawer-side z-[1]">
+                            <label for="my-drawer-4" class="drawer-overlay"></label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -ml-20 text-black text-xl font-medium">
+                                <li><a href="login.html"><button class="btn btn-active btn-link">Login</button></a></li>
+                                <li>
+                                     <!-- acout dowyer -->
+
+                <div class="drawer drawer-end ">
+                    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer-3" class="drawer-button btn btn-sm">Account </label>
+                                    </div>
+
+                                </li>
+
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li class="" tabindex="0">
+                                    <details>
+                                        <summary>Products</summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a href="all_watch.html">Watches</a></li>
+                                            <li><a href="all_sunglass.html">Sunglasses</a></li>
+                                            <li><a href="all_wallet.html">Wallets</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-            </div> -->
-            </div>
 
     </header>
 
@@ -263,10 +214,12 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md hearotitle">
-                                <h1 class=""> Count your golden <br> time</h1>
-                                <p class="">We supply highly quality organic products</p>
-                                <button class="btn  shopnowbtn">Shop
-                                    Now</button>
+                                <h1 class=""> Count Your Golden <br> Time</h1>
+                                <p class="">We supply high quality products</p>
+                                <div>
+                                  <a href="order.html">  <button class="btn  btn-primary hover:bg-blue-500 text-lg font-bold">Shop
+                                    Now</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -283,10 +236,12 @@
                             <div class="hero-overlay bg-opacity-60"></div>
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="max-w-md hearotitle">
-                                    <h1 class="">Safety your money <br> that you earn </h1>
-                                    <p class="">Long lasting lether money bag</p>
-                                    <button class="btn  shopnowbtn">Shop
-                                        Now</button>
+                                    <h1 class="">Safety for your money <br> that you earn </h1>
+                                    <p class="">Long lasting leather wallets</p>
+                                    <div>
+                                        <a href="order.html">  <button class="btn  btn-primary hover:bg-blue-500 text-lg font-bold">Shop
+                                          Now</button></a>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -303,12 +258,14 @@
                             <div class="hero-overlay bg-opacity-60"></div>
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="max-w-md hearotitle">
-                                    <h1 class="">Decorate yourself <br> beautifully
+                                    <h1 class="">Decorate yourself <br> Creatively
                                     </h1>
                                     <p class=""> Can take Sungalass with various design
                                     </p>
-                                    <button class="btn  shopnowbtn">Shop
-                                        Now</button>
+                                    <div>
+                                        <a href="order.html">  <button class="btn  btn-primary hover:bg-blue-500 text-lg font-bold">Shop
+                                          Now</button></a>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -325,35 +282,36 @@
         <!-- offer section  -->
         <section class="my-32">
             <div class="carousel w-full ">
-              
+
                 <div id="item3" class="carousel-item w-full justify-around bg-[#d4dee9] items-center rounded-lg">
-                   <div>
-                    <img  src="./images//thirty.png" class="w-full h-48" />
-                   </div>
-                   <div class="space-y-7">
-                    <h1 class="text-5xl font-extrabold"> Triangle Offer </h1>
-                    <p class="text-lg font-medium"> Buy 3 products From 3 display <br> get 30% discount</p>
-                   </div>
-                   <div>
-                    <img src="./images//discount1.png" alt="" class="w-ful h-48">
-                   </div>
+                    <div>
+                        <img src="./images//thirty.png" class="w-full h-48" />
+                    </div>
+                    <div class="space-y-7">
+                        <h1 class="text-5xl font-extrabold"> Triangle <span class="text-red-500">Offer </span> </h1>
+                        <p class="text-lg font-medium"> Buy any 3 products From Three display <br> get 30% discount</p>
+                    </div>
+                    <div>
+                        <img src="./images//discount1.png" alt="" class="w-ful h-48">
+                    </div>
                 </div>
                 <div id="item4" class="carousel-item w-full justify-around bg-[#d4dee9] items-center rounded-lg">
                     <div>
-                        <img  src="./images//tenparsent.png" class="w-full h-48" />
-                       </div>
-                       <div class="space-y-7">
-                        <h1 class="text-5xl font-extrabold"> Triangle Offer </h1>
-                        <p class="text-lg font-medium"> Buy more than one  products From one display section <br> get 10% discount  </p>
-                       </div>
-                       <div>
+                        <img src="./images//tenparsent.png" class="w-full h-48" />
+                    </div>
+                    <div class="space-y-7">
+                        <h1 class="text-5xl font-extrabold"> Individual <span class="text-red-500">Offer </span> </h1>
+                        <p class="text-lg font-medium"> Buy more than one products From one display section <br> get 10%
+                            discount </p>
+                    </div>
+                    <div>
                         <img src="./images//discount2.png" alt="" class="w-ful h-48">
-                       </div>
                     </div>
                 </div>
             </div>
+            </div>
             <div class="flex justify-center w-full py-2 gap-2">
-               
+
                 <a href="#item3" class="btn btn-xs">1</a>
                 <a href="#item4" class="btn btn-xs">2</a>
             </div>
@@ -361,40 +319,49 @@
         </section>
 
         <!-- card section -->
+       
+
+        <!-- card section -->
         <section class="watch_section">
             <h1 class="dispalytite"> Watch Display </h1>
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <!-- card one  -->
 
-                <div class=" card_div card  ">
+                <div class=" card_div card gap-3 ">
                     <div class="img_div">
-                        <img class=" card_img" src="./images//watch2.png" alt="watch" />
+                        <img class=" card_img h-auto w-auto" src="./images//watch2.png" alt="watch" />
                     </div>
 
-                    <div class="card-body gap-3 ">
+                    <div class="">
                         <h2 class="text-lg font-bold text-center">
                             1200 tk
                         </h2>
 
                         <p class=" ">Model : WS-1539</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
                         </div>
                         <div class="text-center ">
 
                             <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_2.showModal()">Details</a>
-                            <dialog id="my_modal_2" class="modal">
-                                <form method="dialog" class=" w-1/2">
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_31.showModal()">Details</a>
+                                        
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_31" class="modal">
+                                <form method="dialog" class="  w-2/3">
 
                                     <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+
                                         <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
                                             <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
                                                 <img src="/images/watch2.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -409,13 +376,18 @@
                                                     <li>Belt : Chain </li>
                                                     <li>Quality : Water prove</li>
                                                     <li>Warenty : 1 Year </li>
+                                                   
                                                 </ul>
                                                 </p>
                                                 <br>
+                                                <div class="flex justify-between items-center">
 
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
+                                                   
+                                                    <div class="modal-action -mt-1">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-outline btn-primary">Close</button>
+                                                    </div>
+
                                                 </div>
                                             </div>
 
@@ -430,38 +402,43 @@
                 </div>
                 <!-- card two  -->
 
-                <div class=" card_div card  ">
+
+                <div class=" card_div card gap-3">
                     <div class="img_div">
-                        <img class=" card_img" src="./images//watch3.png" alt="watch" />
+                        <img class=" card_img h-auto w-auto" src="./images/Watches/Watches/watches-8-400x400.png"
+                            alt="watch" />
                     </div>
 
-                    <div class="card-body gap-3 ">
+                    <div class="">
                         <h2 class="text-lg font-bold text-center">
-                            1500 tk
+                            1200 tk
                         </h2>
 
-                        <p class=" ">Model : WS-1432</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
                         </div>
                         <div class="text-center ">
 
                             <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_4.showModal()">Details</a>
-                            <dialog id="my_modal_4" class="modal">
-                                <form method="dialog" class=" w-1/2">
+                            <div>
+                                <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                    onclick="my_modal_32.showModal()">Details</a>
+                            </div>
+                            <dialog id="my_modal_32" class="modal">
+                                <form method="dialog" class="  w-2/3">
 
                                     <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+
                                         <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
                                             <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="/images/watch3.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                                <img src="./images/Watches/Watches/watches-8-400x400.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
                                             </div>
                                             <div>
                                                 <h1 class="text-3xl font-bold"> Univarsal </h1>
@@ -477,10 +454,11 @@
                                                 </p>
                                                 <br>
 
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
                                                 </div>
+
                                             </div>
 
                                         </div>
@@ -494,38 +472,43 @@
                 </div>
                 <!-- card three  -->
 
-                <div class=" card_div card  ">
+
+                <div class=" card_div card gap-3 ">
                     <div class="img_div">
-                        <img class=" card_img" src="./images//watch4.png" alt="watch" />
+                        <img class=" card_img h-auto w-auto" src="./images/Watches/Watches/watches-4-1200x1200.png"
+                            alt="watch" />
                     </div>
 
-                    <div class="card-body gap-3 ">
+                    <div class="">
                         <h2 class="text-lg font-bold text-center">
-                            2500 tk
+                            1200 tk
                         </h2>
 
-                        <p class=" ">Model : WS-1497</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
                         </div>
                         <div class="text-center ">
 
                             <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_5.showModal()">Details</a>
-                            <dialog id="my_modal_5" class="modal">
-                                <form method="dialog" class=" w-1/2">
+                            <div>
+                                <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                    onclick="my_modal_33.showModal()">Details</a>
+                            </div>
+                            <dialog id="my_modal_33" class="modal">
+                                <form method="dialog" class="  w-2/3">
 
                                     <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+
                                         <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
                                             <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="/images/watch4.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                                <img src="./images/Watches/Watches/watches-4-1200x1200.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
                                             </div>
                                             <div>
                                                 <h1 class="text-3xl font-bold"> Silvar dimond</h1>
@@ -540,11 +523,11 @@
                                                 </ul>
                                                 </p>
                                                 <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
                                                 </div>
+
                                             </div>
 
                                         </div>
@@ -557,38 +540,42 @@
                 </div>
                 <!-- card four  -->
 
-                <div class=" card_div card  ">
+                <div class=" card_div card gap-3 ">
                     <div class="img_div">
-                        <img class=" card_img" src="./images//watch5.png" alt="watch" />
+                        <img class=" card_img h-auto w-auto" src="./images/Watches/Watches/watches-5-360x360.png"
+                            alt="watch" />
                     </div>
 
-                    <div class="card-body gap-3 ">
+                    <div class="">
                         <h2 class="text-lg font-bold text-center">
-                            1800 tk
+                            1200 tk
                         </h2>
 
-                        <p class=" ">Model : WS-1625</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
                         </div>
                         <div class="text-center ">
 
                             <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_6.showModal()">Details</a>
-                            <dialog id="my_modal_6" class="modal">
-                                <form method="dialog" class=" w-1/2">
+                            <div>
+                                <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                    onclick="my_modal_34.showModal()">Details</a>
+                            </div>
+                            <dialog id="my_modal_34" class="modal">
+                                <form method="dialog" class="  w-2/3">
 
                                     <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+
                                         <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
                                             <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="/images/watch5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                                <img src="./images/Watches/Watches/watches-5-360x360.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
                                             </div>
                                             <div>
                                                 <h1 class="text-3xl font-bold"> Fast count </h1>
@@ -604,10 +591,11 @@
                                                 </p>
                                                 <br>
 
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
                                                 </div>
+
                                             </div>
 
                                         </div>
@@ -623,518 +611,56 @@
             </div>
             <div class="flex justify-center my-12">
                 <div>
-                    <button class="btn  shopnowbtn">See All</button>
+                   <a href="all_watch.html"> <button class="btn  shopnowbtn hover:bg-blue-500">See All</button></a>
                 </div>
 
             </div>
 
         </section>
-
-        <!-- wallet sction  -->
-        <section class="wallet_section">
-            <h1 class="dispalytite"> wallet Display </h1>
-            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
-                <!-- card one  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//wallert1.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            690 tk
-                        </h2>
-
-                        <p class="text-center">Model : WL-2589</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_7.showModal()">Details</a>
-                            <dialog id="my_modal_7" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//wallert1.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold"> Cool look </h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : WL-2589 </li>
-                                                    <li>Brand : Louis Vuitton </li>
-                                                    <li>Colour :black </li>
-
-                                                    <li>Quality : lether </li>
-                                                    <li>Warenty : 1 Year </li>
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card two  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//wallet2.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            450tk
-                        </h2>
-
-                        <p class="text-center">Model : WL-3259</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_8.showModal()">Details</a>
-                            <dialog id="my_modal_8" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//wallet2.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">Blue Style</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : WL-3259 </li>
-                                                    <li>Brand : Hermes</li>
-                                                    <li>Colour : Blue </li>
-
-                                                    <li>Quality : mix</li>
-                                                    <li>Warenty : 1 Year </li>
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card three  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//wallet3.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            850 tk
-                        </h2>
-
-                        <p class="text-center">Model : WL-6591</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_9.showModal()">Details</a>
-                            <dialog id="my_modal_9" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//wallet3.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">Wood panda</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : WL-6591 </li>
-                                                    <li>Brand : Montblanc</li>
-                                                    <li>Colour : Black </li>
-
-                                                    <li>Quality : lether </li>
-                                                    <li>Warenty : 1 Year </li>
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card four  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//wallet4.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            999 tk
-                        </h2>
-
-                        <p class="text-center">Model : WL-1258</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_10.showModal()">Details</a>
-                            <dialog id="my_modal_10" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//wallet4.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">Black Dimond</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : WL-1258 </li>
-                                                    <li>Brand : Gucci</li>
-                                                    <li>Colour : Black </li>
-                                                    <li>Belt : Chain </li>
-                                                    <li>Quality : Water prove</li>
-                                                    <li>Warenty : 1 Year </li>
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="flex justify-center my-12">
-                <div>
-                    <button class="btn  shopnowbtn">See All</button>
-                </div>
-
-            </div>
-
-        </section>
-
         <!-- sunglass sction -->
         <section class="sunglass_section">
             <h1 class="dispalytite"> Sunglass display </h1>
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <!-- card one  -->
 
-                <div class=" card_div card  ">
+                <div class=" card_div card gap-3 ">
                     <div class="img_div">
-                        <img class=" card_img" src="./images//glass1.png" alt="watch" />
+                        <img class=" card_img h-auto w-auto" src="./images/Sunglasses/sunglasses-6-420x420.png"
+                            alt="watch" />
                     </div>
 
-                    <div class="card-body gap-3 ">
+                    <div class="">
                         <h2 class="text-lg font-bold text-center">
-                            600 tk
+                            1200 tk
                         </h2>
 
-                        <p class=" ">Model : SS-2654</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
                         </div>
                         <div class="text-center ">
 
                             <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_11.showModal()">Details</a>
-                            <dialog id="my_modal_11" class="modal">
-                                <form method="dialog" class=" w-1/2">
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_1.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="  w-2/3">
 
                                     <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
+
                                         <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
                                             <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//glass1.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">King look</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : SS-2654 </li>
-                                                    <li>Brand : MELLER </li>
-                                                    <li>Colour : Black </li>
-                                                    <li>Frame : Polimar </li>
-
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card two  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//glass2.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            890 tk
-                        </h2>
-
-                        <p class=" ">Model : SS-1483</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_12.showModal()">Details</a>
-                            <dialog id="my_modal_12" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//glass2.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">Sunprotect</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : SS-1483 </li>
-                                                    <li>Brand : Selfmade</li>
-                                                    <li>Colour : Black </li>
-                                                    <li>Frame : pure Plastic </li>
-
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card three  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//glass3.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            399 tk
-                        </h2>
-
-                        <p class=" ">Model : SS-3258</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_13.showModal()">Details</a>
-                            <dialog id="my_modal_13" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//glass3.png"
-                                                    class="max-w-sm rounded-lg shadow-2xl" />
-                                            </div>
-                                            <div>
-                                                <h1 class="text-3xl font-bold">Royel Black</h1>
-                                                <p class="py-6">
-                                                <ul class="text-left">
-                                                    <li>MOdel : SS-3258 </li>
-                                                    <li>Brand : Gucci</li>
-                                                    <li>Colour : Black </li>
-
-                                                    <li>Frame : pure Plastic </li>
-                                                </ul>
-                                                </p>
-                                                <br>
-
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </dialog>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- card four  -->
-
-                <div class=" card_div card  ">
-                    <div class="img_div">
-                        <img class=" card_img" src="./images//glass4.png" alt="watch" />
-                    </div>
-
-                    <div class="card-body gap-3 ">
-                        <h2 class="text-lg font-bold text-center">
-                            590 tk
-                        </h2>
-
-                        <p class=" ">Model : SS-3842</p>
-                        <div class="rating justify-center ">
-                            <input type="radio" name="rating-2" class="mask mask-star-2  bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
-                        <div class="text-center ">
-
-                            <!-- model -->
-                            <a class="text-lg font-semibold text-info text-maincolor"
-                                onclick="my_modal_14.showModal()">Details</a>
-                            <dialog id="my_modal_14" class="modal">
-                                <form method="dialog" class=" w-1/2">
-
-                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
-                                        <button
-                                            class="btn btn-sm btn-circle btn-ghost absolute right-80 top-20 bg-[#ACC8E5]">✕</button>
-                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
-                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
-                                                <img src="./images//glass4.png"
+                                                <img src="./images/Sunglasses/sunglasses-6-420x420.png"
                                                     class="max-w-sm rounded-lg shadow-2xl" />
                                             </div>
                                             <div>
@@ -1150,14 +676,223 @@
                                                 </p>
                                                 <br>
 
-                                                <div>
-                                                    <button class="btn  shopnowbtn">Buy
-                                                        Now</button>
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
                                                 </div>
-                                            </div>
 
+                                            </div>
                                         </div>
-                                    </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+
+
+                <div class=" card_div card gap-3 ">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Sunglasses/sunglasses-5-2048x2047.png"
+                            alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_20.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_20" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Sunglasses/sunglasses-5-2048x2047.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card three  -->
+
+
+
+                <div class=" card_div card gap-3">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Sunglasses/sunglasses-4-1350x1350.png"
+                            alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_3.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_3" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Sunglasses/sunglasses-4-1350x1350.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card four  -->
+
+
+                <div class=" card_div card gap-3 ">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Sunglasses/sunglasses-3-500x500.png"
+                            alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_21.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_21" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Sunglasses/sunglasses-3-500x500.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                 </form>
                             </dialog>
 
@@ -1169,10 +904,332 @@
             </div>
             <div class="flex justify-center my-12">
                 <div>
-                    <button class="btn  shopnowbtn">See All</button>
+                   <a href="all_sunglass.html"> <button class="btn  shopnowbtn hover:bg-blue-500">See All</button></a>
                 </div>
 
             </div>
+
+        </section>
+
+        <!-- wallet sction  -->
+        <section class="wallet_section">
+            <h1 class="dispalytite"> Wallet Display </h1>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-7">
+                <!-- card one  -->
+
+                <div class=" card_div card gap-3 ">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Wallets/wallet-6-1000x1000.png"
+                            alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_19.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_19" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Wallets/wallet-6-1000x1000.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+
+
+                <div class=" card_div card gap-3 ">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Wallets/wallet-5-650x650.png" alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_18.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_18" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Wallets/wallet-5-650x650.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card three  -->
+
+
+
+                <div class=" card_div card gap-3 ">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Wallets/wallet-3-980x959.png" alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_17.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_17" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Wallets/wallet-3-980x959.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card four  -->
+
+
+                <div class=" card_div card gap-3">
+                    <div class="img_div">
+                        <img class=" card_img h-auto w-auto" src="./images/Wallets/wallet-8-700x700.png" alt="watch" />
+                    </div>
+
+                    <div class="">
+                        <h2 class="text-lg font-bold text-center">
+                            1200 tk
+                        </h2>
+
+                        <p class=" ">Model : WS-1539</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star  bg-orange-400 h-5" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star h-5 bg-orange-400" />
+
+                        </div>
+                        <div class="text-center ">
+
+                            <!-- model -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <a class=" font-bold text-info text-stone-50 btn btn-sm bg-blue-500  hover:bg-blue-800"
+                                        onclick="my_modal_22.showModal()">Details</a>
+                                </div>
+
+                            </div>
+                            <dialog id="my_modal_22" class="modal">
+                                <form method="dialog" class="  w-2/3">
+
+                                    <div class="hero h-1/2 bg-base-200 rounded-lg">
+
+                                        <div class="hero-content flex gap-16 flex-col lg:flex-row-reverse">
+                                            <div class="bg-[#ACC8E5] shadow-xl rounded-xl">
+                                                <img src="./images/Wallets/wallet-8-700x700.png"
+                                                    class="max-w-sm rounded-lg shadow-2xl" />
+                                            </div>
+                                            <div>
+                                                <h1 class="text-3xl font-bold"> Covra look</h1>
+                                                <p class="py-6">
+                                                <ul class="text-left">
+                                                    <li>MOdel : SS-384 </li>
+                                                    <li>Brand : Gucci</li>
+                                                    <li>Colour :Blue </li>
+                                                    <li>Belt : Chain </li>
+                                                    <li>Frame : pure Plastic </li>
+                                                </ul>
+                                                </p>
+                                                <br>
+
+                                                <div class="modal-action">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn btn-outline btn-primary">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </form>
+                            </dialog>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-12">
+                <div>
+                   <a href="all_wallet.html"> <button class="btn  shopnowbtn hover:bg-blue-500">See All</button></a>
+                </div>
+
+            </div>
+
+        </section>
+            <!-- video section  -->
+            <div class="hero h-auto   flex justify-around rounded-lg">
+                <div class="hero-content flex-col lg:flex-row">
+                    <video src="/videos/Explore the magic of OMEGA’s movements.mp4 " controls
+                        class="w-80 shadow-2xl "></video>
+                </div>
+
+                <div>
+                    <h1 class="text-3xl font-extrabold text-center p-5"> Brand Collection</h1>
+                    <div class="grid grid-cols-4 gap-3 ">
+
+
+
+                        <div><img src="images/rolex.png" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/OIP.jpg" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/OIP (1).jpg" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/OIP (2).jpg" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/gucii.jpg" alt="" class="h-12 w-36"></div>
+
+                        <div><img src="images/motblack.jpg" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/millar.jpg" alt="" class="h-12 w-36"></div>
+                        <div><img src="images/R.jpg" alt="" class="h-12 w-36"></div>
+
+
+                    </div>
+                </div>
+            </div>
+
 
         </section>
 
@@ -1182,10 +1239,9 @@
                 Our service
             </h1>
             <p class="text-center py-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem?<br class="lg:hidden"> It has
-                roots in a piece of classical <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                We provide door to door service.<br class="lg:hidden"> Our dedicated team maintains all the products quality from delivery to your home location.
             </p>
-            <div class="hero-content  flex-col lg:flex-row gap-10 px-0 mx-0">
+            <div class="hero-content  flex-col lg:flex-row gap-10 px-0 mx-0 justify-around">
 
 
                 <div class="flex flex-col-reverse lg:flex-row gap-10">
@@ -1203,8 +1259,7 @@
                                 <p class=" text-base font-medium">Professional employees are there for you to <br>
                                     pick
                                     the most
-                                    amazing and fresh
-                                    fruits.</p>
+                                    amazing products</p>
                             </div>
 
                         </div>
@@ -1218,8 +1273,7 @@
                                 <p class="text-base font-medium">Professional employees are there for you to
                                     <br>pick
                                     the most
-                                    amazing and fresh
-                                    fruits.
+                                    amazing products
                                 </p>
                             </div>
 
@@ -1234,8 +1288,7 @@
                                 <p class="text-base font-medium">Professional employees are there for you to <br>
                                     pick
                                     the most
-                                    amazing and fresh
-                                    fruits.</p>
+                                    amazing products.</p>
                             </div>
 
                         </div>
@@ -1263,8 +1316,7 @@
                             <div class="w-28 h-0.5 bg-black ml-24 lg:ml-48 "></div>
                             <p class="text-base font-medium">Professional employees are there for you to <br> pick
                                 the most
-                                amazing and fresh
-                                fruits.</p>
+                                amazing Products</p>
                         </div>
                         <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
                             <img class="w-8 h-8 " src="./images//icons8-home-delivery-64.png" alt="">
@@ -1276,8 +1328,7 @@
                             <div class="w-28 h-0.5 bg-black ml-24 lg:ml-48 "></div>
                             <p class=" text-base font-medium">Professional employees are there for you to <br> pick
                                 the most
-                                amazing and fresh
-                                fruits.</p>
+                                amazing Products</p>
                         </div>
                         <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
                             <img class="w-8 h-8 " src="./images//icons8-installment-payment-96.png" alt="">
@@ -1291,8 +1342,7 @@
 
                             <p class="text-base font-medium">Professional employees are there for you to <br> pick
                                 the most
-                                amazing and fresh
-                                fruits.</p>
+                                amazing Products</p>
                         </div>
                         <div class="bg-cardcolor w-16 h-12 flex justify-center items-center rounded-full">
                             <img class="w-8 h-8 " src="./images//icons8-service-100.png" alt="">
@@ -1305,40 +1355,41 @@
         </section>
         <!-- faq section -->
         <section class="my-32 py-12  px-10  bg-[#d4dee9]">
+            <h1 class="text-5xl font-extrabold text-center pb-12"> Frequently Asked Questions</h1>
 
             <div class="flex flex-col lg:flex-row justify-between gap-10">
+
                 <div class="flex-1 space-y-7 p-10 rounded-lg shadow-lg  bg-base-100">
-                    <h1 class="text-5xl font-extrabold">Triangle Fashion Shop</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur tempora quas
-                        praesentium aut unde accusamus placeat iste iure expedita tempore, odio laborum quam natus
-                        dolorem nulla rerum hic soluta!</p>
+                    <h1 class="text-4xl font-extrabold">Triangle Fashion House</h1>
+                    <p>Premier fashion brand from Bangladesh offering high quality products<br>
+                       At an affordable price.</p>
                 </div>
                 <div class="flex-1 space-y-7">
                     <div class="collapse collapse-plus h-24 items-center bg-base-100">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-medium">
-                            Click to open this one and close others
+                            What's the estimated delivery time?
                         </div>
                         <div class="collapse-content ">
-                            <p>hello</p>
+                            <p>Estimated delivery time is between 2-4 days in Dhaka city and 7 days in other parts of Bangladesh.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus h-24 items-center bg-base-100">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
-                            Click to open this one and close others
+                            How can I avail warranty services?
                         </div>
                         <div class="collapse-content">
-                            <p>hello</p>
+                            <p>Warranty services can be availed by contacting our support team.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus h-24 items-center bg-base-100">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
-                            Click to open this one and close others
+                            What is the return policy?
                         </div>
                         <div class="collapse-content">
-                            <p>hello</p>
+                            <p>Goods can be returned within 10 business days.</p>
                         </div>
                     </div>
                 </div>
@@ -1346,18 +1397,18 @@
         </section>
     </main>
     <!-- foote section  -->
-    <footer class="footer footer-center py-24 bg-black text-neutral-content rounded ">
+    <footer class="footer footer-center py-24 pb-0 bg-black text-neutral-content rounded mt-16">
         <div class="flex flex-1 lg:flex-none px-10 lg:p-0">
             <img class="w-12 h-12" src="images/R.png" alt="">
             <a class="btn btn-ghost normal-case ">
-                <h1 class="text-4xl text-white font-extrabold">Triangle F.S</h1>
+                <h1 class="text-4xl text-white font-extrabold">Triangle Fashion House</h1>
             </a>
         </div>
         <div class="grid  grid-cols-3 lg:grid-flow-col gap-10 text-white">
-            <a class="link link-hover">Home</a>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Shop</a>
-            <a class="link link-hover"> Support</a>
+            <a class="link link-hover" href="index.html">Home</a>
+            <a class="link link-hover" href="about.html">About us</a>
+            <a class="link link-hover" href="shop.html">Shop</a>
+            <a class="link link-hover" href="support.html"> Support</a>
         </div>
         <div>
             <div class="grid grid-flow-col gap-10">
@@ -1381,10 +1432,11 @@
                     </svg></a>
             </div>
             <div class="mt-16">
-                <p>Copyright © by Triangle fashion company </p>
+                <p><small> Designed By : Gigabyte Web_Programming Group (SU) </small> </p>
+                
             </div>
         </div>
-        <br><br> <br>
+        <br>
     </footer>
 
 </body>

@@ -1,0 +1,106 @@
+
+        .font_poppiens {
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header,
+        main,
+        footer {
+            margin: 2rem 0rem;
+        }
+
+        .navbar {
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+
+
+
+        }
+
+        .menu li a {
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .menu-horizontal {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000000;
+            padding: 0rem 0.25rem;
+
+        }
+
+        .menu_top {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .logo {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .hearotitle h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+        }
+
+        /* mb-5 text-xl font-medium */
+        .hearotitle p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+
+        }
+
+        .shopnowbtn {
+            background-color: dodgerblue;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 800;
+            border: none;
+        }
+
+
+
+
+        .carosolSection {
+            margin-bottom: 6.125rem;
+        }
+
+        .card_div {
+            width: auto;
+            height: auto;
+            background-color: #d4dee9;
+            border-radius: 0.5rem;
+            padding: 3rem;
+
+        }
+
+        .card_img {
+            width: 7rem;
+            height: 7rem;
+        }
+
+        .img_div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .dispalytite {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .avatar_img {
+            border: 3px solid blue;
+        }
+  

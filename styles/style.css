@@ -1,4 +1,3 @@
-<style>
 .font_poppiens {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -20,10 +19,13 @@ footer {
     background-color: gray;
 
 }
+
+/*
 .menu_item{
-    /*display: flex;
-    justify-content: space-between;*/
+    display: flex;
+    justify-content: space-between;
 }
+*/
 
 
 /* media quriy */
@@ -36,12 +38,116 @@ footer {
     }
     
     }
-    @media screen and ((min-width: 576px) and (max-width: 976px)) {
-   
-        navbar-center{
 
-           display: flex;
+@media screen and ((min-width: 576px) and (max-width: 976px)) {
 
-    }
-</style>
+    navbar-center{
+
+        display: flex;
+
+}
+}
+
+.font_poppiens {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main,
+footer {
+    margin: 2rem 0rem;
+}
+
+.navbar {
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: #ACC8E5;
+
+
+}
+
+.menu-horizontal {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 0rem 0.25rem;
+
+}
+
+.menu_top {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.hearotitle h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+}
+
+/* mb-5 text-xl font-medium */
+.hearotitle p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+
+}
+
+.shopnowbtn {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border: none;
+}
+
+hover::shopnowbtn {
+    background-color: #ACC8E5;
+    color: bisque;
+}
+
+.carosolSection {
+    margin-bottom: 6.125rem;
+}
+
+.card_div {
+    width: auto;
+    height: auto;
+    background-color: #d4dee9;
+    border-radius: 0.5rem;
+    padding: 3rem;
+
+}
+
+.card_img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.img_div {
+    display: flex;
+    justify-content: center;
+}
+
+.dispalytite {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.call-logo, .mail-logo {
+    display: inline;
+    margin-top: 0px;
+}
 

@@ -1,0 +1,116 @@
+body {
+    color: black;
+    /*background-color: rgba(0, 0, 0, 0.479);
+    background-image: url("../images/background-img.jpg");*/
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+   
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.login-box {
+    width: 350px;
+    height: 420px;
+    margin-top: 100px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
+    
+}
+
+.login-box label {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.login-box input {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 85%;
+    font-size: 0.7rem;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.login-box p, .regi-box p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.login-button, .submit-button {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+}
+
+.login-button, .submit-button {
+    background-color: #ACC8E5;
+    padding: 8px 4px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+select {
+    padding: 1px 2px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+select, .login-button, .submit-button {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.login-button:hover, .submit-button:hover {
+    cursor: pointer;
+}
+
+.regi-box {
+    width: 550px;
+    height: 900px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.regi-box-label, .regi-box-input {
+    margin-left: 20px;
+}
+
+.regi-box-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 5px;
+    font-size: 0.8rem;
+    border: 2px solid black;
+}
+
+.img-button {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: underline;
+}
+
